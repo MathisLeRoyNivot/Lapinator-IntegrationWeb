@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <title>Lapinator</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="left-panel">
+
+            <a href="javascript:void(0);" onclick="myFunction()">
+                <div class="burger-menu burger-menu--closed">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </a>
+
+
+            <nav class="navbar" id="navbarTop">
+                <div class="navbar-logo">
+                    <img src="img/running-rabbit.png" alt="logo">
+                </div>
+                <div class="elements">
+                    <ul class="navbar-elements">
+                        <!--On active, soulignez en bleu-->
+                        <li class="active">
+                            <a href="#Lien1">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="#Lien2">L'équipe</a>
+                        </li>
+                        <li>
+                            <a href="#Lien3">Prix</a>
+                        </li>
+                        <li>
+                            <a href="#Lien4">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <section class="text-left">
+                <h1>LAPINATOR</h1>
+                <p>Lorem ipsum dolor sit amet doleum.</p>
+            </section>
+
+            <div class="radius">
+                <form action="">
+                    <i class="fas fa-sign-in-alt fa-3x"></i>
+                    <input type="text" placeholder="Entrer votre code session" class="in-txt">
+                    <button type="submit">Let's go !</button>
+                </form>
+            </div>
+
+            <p class="fo-txtoublie">
+                <a href="#forgot" class="fo-forgot-pswd">Mot de passe oublié ?</a>
+            </p>
+        </div>
+
+        <div class="right-panel">
+
+        </div>
+
+    </div>
+
+    <script>
+        $('.burger-menu').click(function () {
+            $(this).toggleClass('burger-menu--opened');
+            $(this).toggleClass('burger-menu--closed');
+        });
+    </script>
+
+</body>
+
+</html>
