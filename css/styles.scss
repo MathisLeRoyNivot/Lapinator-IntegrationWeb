@@ -243,7 +243,9 @@ button {
     font-size: 16px;
     font-style: italic;
     margin-left: 4vw;
-    text-align: center
+    margin-top: -200px;
+    text-align: center;
+    width: 100%;
 }
 
 /*--------------------------------------------------------------*/
@@ -392,6 +394,7 @@ button {
         font-size: 16px;
         font-style: italic;
         margin: 0 auto;
+        margin-top: -70px;
         text-align: center
     }
 
