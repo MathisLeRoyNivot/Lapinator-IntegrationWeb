@@ -154,7 +154,7 @@ li:hover {
 .text-left h1 {
     color: #040e28;
     font-size: 50px;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 15px;
 }
 
@@ -176,8 +176,8 @@ li:hover {
 }
 
 svg {
-    height: 50px;
-    margin: 4px 20px 2px 20px;
+    height: 100%;
+    margin: 8px 20px 4px 20px;
     line-height: 58px;
     width: 25px;
 }
@@ -185,6 +185,7 @@ svg {
 .fa-sign-in-alt {
     color: #bfc3cf;
     line-height: 58px;
+    margin: 8px 20px 4px 20px;
     width: 25px;
 }
 
@@ -198,7 +199,7 @@ input {
     border: 2px solid transparent;
     color: #50e3c2;
     width: 80%;
-    height: 58px;
+    height: 52px;
     font-size: 18px;
     background-color: transparent;
     box-shadow: 0 0 50 0 #505050;
@@ -209,7 +210,7 @@ input::placeholder {
 }
 
 input[type="text"]:focus {
-    border-bottom: 2px solid #4488ff;
+    border-bottom: 2px solid #50e3c2;
 }
 
 button {
@@ -220,6 +221,7 @@ button {
     font-size: 18px;
     height: 50px;
     margin: 4px;
+    line-height: 50px;
     text-align: center;
     width: 150px;
  }
@@ -272,7 +274,10 @@ button {
 }
 
 @media screen and (max-width: 1280px) {
-
+    input {
+        width: 70%;
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -290,7 +295,6 @@ button {
             display: block;
         }
         .navbar-elements li a {
-            display: block;
             flex-wrap: wrap;
             margin: 0 auto;
             width: 100%;
@@ -298,10 +302,22 @@ button {
         }
     }
 
+    ul {
+        justify-content: space-evenly;
+        display: block;
+        padding: 0px;
+        text-align: center;
+        width: 100vw;
+    }
+
     .burger-menu {
         display: block;
         position: absolute;
         z-index: 15;
+    }
+
+    .navbar-logo {
+        width: auto;
     }
 
     .navbar-logo img {
@@ -351,13 +367,13 @@ button {
     svg {
         height: 50px;
         margin: 4px 20px 2px 20px;
-        line-height: 58px;
+        line-height: 50px;
         width: 25px;
     }
     
     .fa-sign-in-alt {
-        line-height: 58px;
-        width: 25px;
+        line-height: 50px;
+        width: 20px;
     }
     
     form {
@@ -368,11 +384,12 @@ button {
     }
     
     input {
+        background-color: transparent;
         border: 2px solid transparent;
         box-shadow: 0 0 50 0 #505050;
         height: 50px;
         font-size: 15px;
-        background-color: transparent;
+        line-height: 50px;
         width: 70%;
     }
     
@@ -382,6 +399,7 @@ button {
         border-radius: 29px;
         font-size: 18px;
         height: 50px;
+        line-height: 50px;
         margin: 0 auto;
         margin-top: 30px;
         text-align: center;
@@ -414,6 +432,38 @@ button {
         background-repeat: no-repeat;
         background-size: cover;
         margin-top: 0px;
+    }
+
+    burger-menu {
+        height: 30px;
+        margin: 20px 20px;  
+        right: 0px;
+        transition: all .3s;
+        width: 30px;
+    }
+
+    ul {
+        display: block;
+        padding: 0px;
+        text-align: center;
+        width: 100vw;
+    }
+
+    li.liste {
+        border: 1px solid black;
+        flex-wrap: wrap;
+    }
+
+    .navbar-logo img {
+        height: 45px;
+        margin: 10px;
+        width: auto;
+    }
+
+    input {
+        height: 45px;
+        font-size: 15px;
+        width: 60%;
     }
 
     .right-panel {
