@@ -200,8 +200,8 @@ li:hover {
   margin: 70px;
   border-radius: 29px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 0px 50px 0px #505050;
-          box-shadow: 0px 0px 50px 0px #505050;
+  -webkit-box-shadow: 0px 0px 30px 0px #505050;
+          box-shadow: 0px 0px 30px 0px #505050;
 }
 
 svg {
@@ -490,6 +490,17 @@ button:hover {
     height: 45px;
     font-size: 15px;
     width: 60%;
+  }
+  .elements {
+    top: 45px;
+  }
+  .fo-txtoublie {
+    color: #bfc3cf;
+    font-size: 16px;
+    font-style: italic;
+    margin: 0 auto;
+    margin-top: 0px;
+    text-align: center;
   }
   .right-panel {
     display: none;
